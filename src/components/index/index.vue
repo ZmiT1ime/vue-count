@@ -30,27 +30,27 @@
                 // 基于准备好的dom，初始化echarts实例
                 let myChart = this.$echarts.init(document.getElementById('myChart'))
                 // 绘制图表
-                myChart.setOption({
-                    series: [
-                        {
-                            name: '中国',
-                            type: 'map',
-                            mapType: 'china',
-                            selectedMode : 'multiple',
-                            label: {
-                                normal: {
-                                    show: true
-                                },
-                                emphasis: {
-                                    show: true
-                                }
-                            },
-                            data:[
-                                {name:'广东', selected:true}
-                            ]
-                        }
-                    ]
-                });
+//                myChart.setOption({
+//                    series: [
+//                        {
+//                            name: '中国',
+//                            type: 'map',
+//                            mapType: 'china',
+//                            selectedMode : 'multiple',
+//                            label: {
+//                                normal: {
+//                                    show: true
+//                                },
+//                                emphasis: {
+//                                    show: true
+//                                }
+//                            },
+//                            data:[
+//                                {name:'广东', selected:true}
+//                            ]
+//                        }
+//                    ]
+//                });
             }
         }
     }
