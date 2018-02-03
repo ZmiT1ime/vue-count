@@ -6,15 +6,18 @@ import map from '@/components/map/map'
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
-  routes: [
-    {
-      path: '/',
-      component: index
-    },
-    {
-      path: '/map',
-      component: map
-    },
-  ]
+    mode: 'history',
+    routes: [
+        {
+            path: '/home',
+            component: index
+        }, {
+            path: '/',
+            redirect: '/home'
+        },
+        {
+            path: '/map',
+            component: map
+        },
+    ]
 })
