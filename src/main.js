@@ -6,12 +6,16 @@ import router from './router'
 import FastClick from 'fastclick'
 import {WechatPlugin, AjaxPlugin, LoadingPlugin, ToastPlugin, AlertPlugin} from 'vux'
 import echarts from 'echarts'
+import Vuex from 'vuex'
+import store from './store/store'
 
 Vue.use(WechatPlugin)
 Vue.use(AjaxPlugin)
 Vue.use(LoadingPlugin)
 Vue.use(ToastPlugin)
 Vue.use(AlertPlugin)
+
+Vue.use(Vuex)
 
 Vue.config.productionTip = false;
 
@@ -24,8 +28,9 @@ FastClick.attach(document.body)
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
+    el: '#app',
+    router,
+    store,
+    components: { App },
+    template: '<App/>'
 })

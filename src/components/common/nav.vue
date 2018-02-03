@@ -1,39 +1,37 @@
-<template>
-  <div>
-    <tabbar style="position:fixed">
-      <tabbar-item selected link="/">
-        <i class="nav-icon icon-home" slot="icon"></i>
-        <span slot="label">home</span>
-      </tabbar-item>
-      <tabbar-item link="/map">
-        <i class="nav-icon icon-folder-open" slot="icon"></i>
-        <span slot="label">Message</span>
-      </tabbar-item>
-      <tabbar-item link="/">
-        <i class="nav-icon icon-stats-bars" slot="icon"></i>
-        <span slot="label">userInfo</span>
-      </tabbar-item>
-      <tabbar-item>
-        <i class="nav-icon icon-stack" slot="icon"></i>
-        <span slot="label">News</span>
-      </tabbar-item>
-    </tabbar>
-  </div>
-</template>
+<!--<template>-->
+  <!--<div>-->
+    <!--&lt;!&ndash;<tabbar style="position:fixed">&ndash;&gt;-->
+      <!--&lt;!&ndash;<tabbar-item selected link="/">&ndash;&gt;-->
+        <!--&lt;!&ndash;<i class="nav-icon icon-home" slot="icon"></i>&ndash;&gt;-->
+        <!--&lt;!&ndash;<span slot="label">home</span>&ndash;&gt;-->
+      <!--&lt;!&ndash;</tabbar-item>&ndash;&gt;-->
+      <!--&lt;!&ndash;<tabbar-item link="/map">&ndash;&gt;-->
+        <!--&lt;!&ndash;<i class="nav-icon icon-folder-open" slot="icon"></i>&ndash;&gt;-->
+        <!--&lt;!&ndash;<span slot="label">Message</span>&ndash;&gt;-->
+      <!--&lt;!&ndash;</tabbar-item>&ndash;&gt;-->
+      <!--&lt;!&ndash;<tabbar-item link="/">&ndash;&gt;-->
+        <!--&lt;!&ndash;<i class="nav-icon icon-stats-bars" slot="icon"></i>&ndash;&gt;-->
+        <!--&lt;!&ndash;<span slot="label">userInfo</span>&ndash;&gt;-->
+      <!--&lt;!&ndash;</tabbar-item>&ndash;&gt;-->
+      <!--&lt;!&ndash;<tabbar-item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<i class="nav-icon icon-stack" slot="icon"></i>&ndash;&gt;-->
+        <!--&lt;!&ndash;<span slot="label">News</span>&ndash;&gt;-->
+      <!--&lt;!&ndash;</tabbar-item>&ndash;&gt;-->
+    <!--&lt;!&ndash;</tabbar>&ndash;&gt;-->
+  <!--</div>-->
+<!--</template>-->
 
-<script>
-  import { Tabbar, TabbarItem } from 'vux'
+<!--<script>-->
+  <!--import { Tabbar, TabbarItem } from 'vux'-->
 
-  export default {
-    components: {
-      Tabbar,
-      TabbarItem,
-    }
-  }
-</script>
+  <!--export default {-->
+    <!--components: {-->
+      <!--Tabbar,-->
+      <!--TabbarItem,-->
+    <!--}-->
+  <!--}-->
+<!--</script>-->
 
-<style lang="less">
-  .weui-bar__item_on {
-    background-color: #eee;
-  }
-</style>
+<!--<style lang="less">-->
+
+<!--</style>-->
