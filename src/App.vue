@@ -15,10 +15,6 @@
                 <i class="nav-icon icon-folder-open" slot="icon"></i>
                 <span slot="label">Message</span>
             </tabbar-item>
-            <tabbar-item link="/">
-                <i class="nav-icon icon-stats-bars" slot="icon"></i>
-                <span slot="label">userInfo</span>
-            </tabbar-item>
             <tabbar-item>
                 <i class="nav-icon icon-stack" slot="icon"></i>
                 <span slot="label">News</span>
@@ -41,6 +37,7 @@
 <style>
     @import "assets/css/reset.css";
     @import "assets/css/icon.css";
+    .weui-tabbar,
     #app{
         max-width: 640px;
         min-width: 320px;
@@ -52,7 +49,7 @@
     .fade-enter, .fade-leave-to {
         opacity: 0
     }
-    .weui-bar__item_on {
-        background-color: #eee;
-    }
+    /*.weui-bar__item_on {*/
+        /*background-color: #eee;*/
+    /*}*/
 </style>
