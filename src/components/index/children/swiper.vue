@@ -6,10 +6,7 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
-
-        <div>子组件</div>
     </div>
-
 </template>
 
 <script>

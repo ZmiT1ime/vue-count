@@ -6,18 +6,21 @@
             </keep-alive>
         </transition>
 
-        <tabbar style="position:fixed;background-color: #fff;" v-show="$route.path == '/home' || $route.path == '/map' || $route.path == '/explore' || $route.path == '/me'">
-            <tabbar-item selected link="/">
+        <tabbar style="position:fixed;background-color: #fff;" v-show="$route.path == '/home' || $route.path == '/map' || $route.path == '/personal'">
+            <tabbar-item :selected="$route.path === '/home'"
+                         link="/home">
                 <i class="nav-icon icon-home" slot="icon"></i>
-                <span slot="label">home</span>
+                <span slot="label">萌宠馆</span>
             </tabbar-item>
-            <tabbar-item link="/map">
+            <tabbar-item :selected="$route.path === '/map'"
+                         link="/map">
                 <i class="nav-icon icon-folder-open" slot="icon"></i>
-                <span slot="label">Message</span>
+                <span slot="label">萌宠分类</span>
             </tabbar-item>
-            <tabbar-item>
-                <i class="nav-icon icon-stack" slot="icon"></i>
-                <span slot="label">News</span>
+            <tabbar-item :selected="$route.path === '/personal'"
+                          link="/personal">
+                <i class="nav-icon icon-user" slot="icon"></i>
+                <span slot="label">我的萌宠</span>
             </tabbar-item>
         </tabbar>
     </div>
@@ -37,6 +40,11 @@
 <style>
     @import "assets/css/reset.css";
     @import "assets/css/icon.css";
+    body {
+        background-color:#f2f2f2;
+        height: 100%;
+
+    }
     .weui-tabbar,
     #app{
         max-width: 640px;
@@ -49,7 +57,8 @@
     .fade-enter, .fade-leave-to {
         opacity: 0
     }
-    /*.weui-bar__item_on {*/
-        /*background-color: #eee;*/
-    /*}*/
+    .weui-cells{
+        margin-top: 10px !important;
+        font-size: 14px !important;
+    }
 </style>

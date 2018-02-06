@@ -5,7 +5,6 @@
 </template>
 
 <script>
-    import nav from '../common/nav'
     import { Group, Cell } from 'vux'
     import { mapState, mapMutations } from 'vuex'
     import swiper from './children/swiper'
@@ -18,8 +17,8 @@
         data () {
             return {
                 listImg: [
-                    {url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1517811482697&di=96e46da399f64cf042b8665d0ea2c003&imgtype=0&src=http%3A%2F%2Fpic40.nipic.com%2F20140423%2F9252150_180932492301_2.jpg', title: '1'},
-                    {url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1517811482697&di=96e46da399f64cf042b8665d0ea2c003&imgtype=0&src=http%3A%2F%2Fpic40.nipic.com%2F20140423%2F9252150_180932492301_2.jpg', title: '2'}
+                    {url: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3091698902,3708189859&fm=27&gp=0.jpg', title: '1'},
+                    {url: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2382154985,4022539348&fm=27&gp=0.jpg', title: '2'}
                 ],
             }
         },
