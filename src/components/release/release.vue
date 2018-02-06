@@ -7,8 +7,9 @@
         <group>
             <selector placeholder="请选择萌宠类别" title="萌宠类别：" :options="classifyList"></selector>
         </group>
-
-        <v-editor></v-editor>
+        <group>
+            <v-editor></v-editor>
+        </group>
     </div>
 </template>
 
