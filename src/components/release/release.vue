@@ -10,11 +10,14 @@
         <group>
             <v-editor></v-editor>
         </group>
+        <group>
+            <x-button type="primary" text="提交" style="background-color: #008de1;" @click.native="releaseBtn"></x-button>
+        </group>
     </div>
 </template>
 
 <script>
-    import { XInput, Group, Selector, XHeader } from 'vux'
+    import { XInput, Group, Selector, XHeader, XButton } from 'vux'
     import vEditor from '../common/editor/editor.vue'
     export default {
         components: {
@@ -23,6 +26,7 @@
             Selector,
             XHeader,
             vEditor,
+            XButton
         },
         data() {
             return {
@@ -34,6 +38,11 @@
                 ]
             }
         },
+        methods: {
+          releaseBtn: function() {
+            console.log(123);
+          }
+        }
     }
 </script>
 
