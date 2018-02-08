@@ -5,7 +5,8 @@ import mutations from './mutations'
 Vue.use(Vuex);
 
 const state = {
-  isApp: 1,
+  // releaseData: localStorage['releaseData'] === undefined ? [] : localStorage['releaseData'],
+    releaseData: []
 };
 
 export default new Vuex.Store({

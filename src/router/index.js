@@ -4,6 +4,7 @@ import index from '@/components/index/index'
 import map from '@/components/map/map'
 import personal from '@/components/personal/personal'
 import release from '@/components/release/release'
+import releaseList from '@/components/releaseList/releaseList'
 
 Vue.use(Router);
 
@@ -11,23 +12,45 @@ export default new Router({
     routes: [
         {
             path: '/home',
-            component: index
+            component: index,
+            meta: {
+                keepAlive: false // 不需要被缓存
+            }
         },
         {
             path: '/',
-            redirect: '/home'
+            redirect: '/home',
+            meta: {
+                keepAlive: true // 需要被缓存
+            }
         },
         {
             path: '/map',
-            component: map
+            component: map,
+            meta: {
+                keepAlive: true // 需要被缓存
+            }
         },
         {
             path: '/personal',
-            component: personal
+            component: personal,
+            meta: {
+                keepAlive: true // 需要被缓存
+            }
         },
         {
             path: '/release',
-            component: release
+            component: release,
+            meta: {
+                keepAlive: false // 不需要被缓存
+            }
+        },
+        {
+            path: '/releaseList',
+            component: releaseList,
+            meta: {
+                keepAlive: false // 不需要被缓存
+            }
         }
     ]
 })

@@ -1,8 +1,8 @@
 <template>
     <div class="editor-container">
-        <quill-editor ref="myTextEditor"
+        <quill-editor v-model="content" ref="myTextEditor"
                       :content="content"
-                      placeholder="123"
+                      :placeholder="123"
         >
         </quill-editor>
     </div>
@@ -22,6 +22,11 @@
         },
         methods: {
 
+        },
+        watch: {
+            content: function(newVal) {
+                this.$emit('editorContent', newVal);
+            }
         }
     }
 </script>

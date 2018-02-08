@@ -19,11 +19,11 @@
         </div>
 
         <group>
-            <cell title="发布萌宠生活" link="/release"></cell>
+            <cell title="我发布的" link="/releaseList"></cell>
         </group>
 
         <group>
-            <cell title="title"  link="/"></cell>
+            <cell title="发布萌宠生活" link="/release"></cell>
         </group>
     </div>
 </template>

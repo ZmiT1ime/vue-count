@@ -1,1 +1,1 @@
-export const ISAPP = 'ISAPP'
+export const RELEASEMSG = 'RELEASEMSG'

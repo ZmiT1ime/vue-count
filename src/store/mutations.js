@@ -1,7 +1,8 @@
-import { ISAPP } from './mutation-types.js';
+import { RELEASEMSG } from './mutation-types.js';
 
 export default {
-    [ISAPP](state, id) {
-        state.isApp = id;
+    [RELEASEMSG](state, param) {
+        state.releaseData.push(param);
+        // localStorage.setItem('releaseData', JSON.stringify(state.releaseData));
     },
 }

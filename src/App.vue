@@ -1,9 +1,11 @@
 <template>
     <div id="app">
         <transition name="fade" mode="out-in">
-            <keep-alive>
+            <keep-alive v-if="$route.meta.keepAlive">
                 <router-view></router-view>
             </keep-alive>
+
+            <router-view v-if="!$route.meta.keepAlive"></router-view>
         </transition>
 
         <tabbar style="position:fixed;background-color: #fff;" v-show="$route.path == '/home' || $route.path == '/map' || $route.path == '/personal'">
